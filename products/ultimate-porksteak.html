@@ -49,13 +49,12 @@
   
   <form action="#" method="POST">
     
-    <!-- 1. Quantity (number input: min 1, max 20) -->
     <div>
       <label for="quantity">Quantity:</label>
       <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
     </div>
 
-    <!-- 2. Delivery Method (radio buttons inside fieldset with legend, sharing one name) -->
+
     <fieldset>
       <legend>Delivery Method</legend>
       
@@ -72,30 +71,30 @@
       </label>
     </fieldset>
 
-    <!-- 3. Optional extras (checkboxes, sharing one name) -->
+   
     <div>
       <p>Optional Extras:</p>
       
       <label>
-        <input type="checkbox" name="extras" value="gift_wrap"> Gift Wrapping
+        <input type="checkbox" name="extras" value="extra_rice"> Extra Rice
       </label><br>
       
       <label>
-        <input type="checkbox" name="extras" value="express_handling"> Express Handling
+        <input type="checkbox" name="extras" value="extra_toppings"> Extra Toppings
       </label><br>
       
       <label>
-        <input type="checkbox" name="extras" value="insurance"> Shipping Insurance
+        <input type="checkbox" name="extras" value="disposable_utensils"> Disposable Utensils
       </label>
     </div>
 
-    <!-- 4. Contact email (required email input) -->
+   
     <div>
       <label for="email">Contact Email:</label>
       <input type="email" id="email" name="email" required placeholder="your.email@example.com">
     </div>
 
-    <!-- Submit Button -->
+    
     <button type="submit">Send Enquiry</button>
 
   </form>
