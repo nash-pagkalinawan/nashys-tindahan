@@ -1,0 +1,80 @@
+/* ==========================================================================
+   1. VARIABLES
+   ========================================================================== */
+:root {
+  --brand-color: #0056b3;
+  --dark-ink: #1a1a1a;
+  --muted-grey: #6c757d;
+  --light-bg: #f8f9fa;
+}
+
+/* ==========================================================================
+   2. BASE STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--dark-ink);
+  background-color: var(--light-bg);
+  margin: 0;
+  padding: 0;
+}
+
+/* ==========================================================================
+   3. LAYOUT REGIONS
+   ========================================================================== */
+header {
+  background-color: #ffffff;
+  border-bottom: 1px solid var(--muted-grey);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  color: var(--brand-color);
+  text-decoration: none;
+}
+
+main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+footer {
+  border-top: 1px solid var(--muted-grey);
+  color: var(--muted-grey);
+  text-align: center;
+  padding: 1.5rem;
+  margin-top: 2rem;
+}
+
+/* ==========================================================================
+   4. COMPONENTS
+   ========================================================================== */
+.product-card {
+  background-color: #ffffff;
+  border: 1px solid var(--muted-grey);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.product-card h3 {
+  color: var(--brand-color);
+  margin-top: 0;
+}
