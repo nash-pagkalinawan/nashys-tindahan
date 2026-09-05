@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instant Noodles Adobo - Details</title>
+</head>
+<body>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../about.html">About</a>
+        <a href="../contact.html">Contact</a>
+    </nav>
+
+    <main>
+
+        <h1>Instant Noodles w/ Adobo</h1>
+
+        <img src="../instant-noodles-adobo.jpg" alt="Instant Noodles w/ Adobo" width="600">
+
+        <p>
+           This is a combination of sweet and spicy instant noodles and our iconic rich, tangy, and deeply savory 
+           Filipino dish. 
+        </p>
+
+        <table>
+            <caption>Product Specifications</caption>
+            <tr>
+                <th>Serving Size</th>
+                <td>Good for 1</td>
+            </tr>
+            <tr>
+                <th>Main Ingredients</th>
+                <td>Meat, Soy Sauce, Vinegar, Garlic, Whole Black Peppercorns, Dry Bay Leavaes,
+                    Cooking Oil, Water, and Indomie Migoreng Instant Noodles .</td>
+            </tr>
+            <tr>
+                <th>Spice Level</th>
+                <td>Spicy</td>
+            </tr>
+            <tr>
+                <th>Price</th>
+                <td>₱60</td>
+            </tr>
+        </table>
+
+<section id="order-enquiry">
+  <h2>Order Enquiry Form</h2>
+  
+  <form action="#" method="POST">
+    
+    <div>
+      <label for="quantity">Quantity:</label>
+      <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+    </div>
+
+
+    <fieldset>
+      <legend>Delivery Method</legend>
+      
+      <label>
+        <input type="radio" name="delivery_method" value="standard" checked> Standard Shipping
+      </label><br>
+      
+      <label>
+        <input type="radio" name="delivery_method" value="express"> Express Delivery
+      </label><br>
+      
+      <label>
+        <input type="radio" name="delivery_method" value="pickup"> Store Pickup
+      </label>
+    </fieldset>
+
+   
+    <div>
+      <p>Optional Extras:</p>
+      
+      <label>
+        <input type="checkbox" name="extras" value="add_rice"> Add Rice
+      </label><br>
+      
+      <label>
+        <input type="checkbox" name="extras" value="extra_toppings"> Extra Toppings
+      </label><br>
+      
+      <label>
+        <input type="checkbox" name="extras" value="disposable_utensils"> Disposable Utensils
+      </label>
+    </div>
+
+   
+    <div>
+      <label for="email">Contact Email:</label>
+      <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+    </div>
+
+    
+    <button type="submit">Send Enquiry</button>
+
+  </form>
+</section>
+
+    </main>
+
+</body>
+</html>
