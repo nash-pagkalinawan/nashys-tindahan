@@ -19,7 +19,7 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   color: var(--muted);
-  background-color: var(--light-bg);
+  background-color: rgb(167, 112, 11);
   margin: 0;
   padding: 0;
 }
@@ -58,10 +58,11 @@ main {
 
 footer {
   border-top: 1px solid var(--muted-grey);
-  color: var(--dark-ink);
+  color: var(--light-bg);
   text-align: center;
   padding: 1.5rem;
   margin-top: 2rem;
+  background-color: var(--brand-color);
 }
 
 /* ==========================================================================
@@ -169,4 +170,40 @@ textarea:focus {
 
 .centered-nav a {
   margin: 0 15px; 
+}
+
+.view-details-link
+{
+font-family: 'Rochester', cursive;
+text-decoration: none;
+font-size: 20px;
+color: var(--brand-color);
+}
+
+.owner-name
+{
+font-family: 'Rochester', cursive;
+font-size: 30px;
+color: rgb(255, 255, 255);
+}
+
+.our-story
+{
+font-family: 'Rochester', cursive;
+font-size: 30px;
+color: rgb(255, 255, 255);
+}
+
+.contacts
+{
+font-family: 'Rochester', cursive;
+font-size: 25px;
+color: rgb(255, 255, 255);
+}
+
+.your-details-title
+{
+font-family: 'Rochester', cursive;
+font-size: 20px;
+color: rgb(83, 0, 0);
 }
