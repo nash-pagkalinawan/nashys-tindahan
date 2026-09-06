@@ -2,7 +2,7 @@
    1. VARIABLES
    ========================================================================== */
 :root {
-  --brand-color: #0056b3;
+  --brand-color: #1d699b;
   --dark-ink: #1a1a1a;
   --muted-grey: #6c757d;
   --light-bg: #f8f9fa;
@@ -18,7 +18,7 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: var(--dark-ink);
+  color: var(--muted);
   background-color: var(--light-bg);
   margin: 0;
   padding: 0;
@@ -28,7 +28,7 @@ body {
    3. LAYOUT REGIONS
    ========================================================================== */
 header {
-  background-color: #ffffff;
+  background-color: #07081f;
   border-bottom: 1px solid var(--muted-grey);
   padding: 1rem;
 }
@@ -45,8 +45,9 @@ nav li {
 }
 
 nav a {
-  color: var(--brand-color);
+  color: rgb(238, 231, 231);
   text-decoration: none;
+  font-family: 'Rochester', cursive;
 }
 
 main {
@@ -57,7 +58,7 @@ main {
 
 footer {
   border-top: 1px solid var(--muted-grey);
-  color: var(--muted-grey);
+  color: var(--dark-ink);
   text-align: center;
   padding: 1.5rem;
   margin-top: 2rem;
@@ -78,3 +79,32 @@ footer {
   color: var(--brand-color);
   margin-top: 0;
 }
+
+.rochester-regular {
+  font-family: "Rochester", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+font-family: 'Rochester', cursive;
+color: rgb(211, 8, 8)
+}
+
+h3 {
+  font-family: 'Rochester', cursive;
+  font-size: 30px;
+  color: black;
+}
+
+
+p {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.tagline {
+  font-family:"Rochester", cursive;
+  color: #ffd000;
+  font-size: 17px;
+}
+
