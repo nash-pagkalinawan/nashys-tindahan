@@ -2,7 +2,7 @@
    1. VARIABLES
    ========================================================================== */
 :root {
-  --brand-color: #1d699b;
+  --brand-color: #070d1f;
   --dark-ink: #1a1a1a;
   --muted-grey: #6c757d;
   --light-bg: #f8f9fa;
@@ -91,12 +91,6 @@ font-family: 'Rochester', cursive;
 color: rgb(211, 8, 8)
 }
 
-h3 {
-  font-family: 'Rochester', cursive;
-  font-size: 30px;
-  color: black;
-}
-
 
 p {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
@@ -108,3 +102,71 @@ p {
   font-size: 17px;
 }
 
+/* Styling para sa mismong Product Card */
+.product-card {
+  background-color: #faf9f9; 
+  border-radius: 20px;       
+  padding: 16px;            
+  border-left: 5px solid var(--brand-color); /* Coloured left border gamit ang brand variable */
+  margin-bottom: 20px;       
+}
+
+/* 5. Styling para sa Product Name (h3 sa loob ng card) */
+.product-card h3 {
+  font-size: 2.0rem;         
+  color: rgb(71, 2, 2); 
+  font-family: 'Rochester', cursive;
+}
+
+
+/* 1. Fieldset styling */
+fieldset {
+  padding: 1rem;
+  border-radius: 15px;
+  border: 1px solid #ccc;
+}
+
+/* 2. Legend styling */
+legend {
+  color: var(--brand-color);
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* 3. Inputs at Textarea padding */
+input, textarea {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* 4. Submit Button styling */
+button[type="submit"], input[type="submit"] {
+  background-color: var(--brand-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;              
+  border-radius: px;
+  cursor: pointer;          
+  font-weight: bold;
+}
+
+/* 5. Visible Focus State (Kopyahin lang ang ibinigay sa screenshot) */
+input:focus,
+textarea:focus {
+  outline: 3px solid var(--brand-color);
+  outline-offset: 2px;
+}
+
+
+.centered-nav {
+  text-align: center;
+  padding: 15px 0;
+  font-size: 20px;
+}
+
+.centered-nav a {
+  margin: 0 15px; 
+}
