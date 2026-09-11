@@ -31,8 +31,6 @@ body {
   background-color: #07081f;
   border-bottom: 1px solid var(--muted-grey);
   padding: 1rem;
-
-  
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,18 +66,28 @@ footer {
 }
 
 /* ==========================================================================
-   4. COMPONENTS
+   4. COMPONENTS & PRODUCT GRID
    ========================================================================== */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
 .product-card {
-  background-color: #ffffff;
+  flex: 1 1 240px;
+  background-color: #faf9f9; 
+  border-radius: 20px;         
+  padding: 16px;            
+  border-left: 5px solid var(--brand-color);
   border: 1px solid var(--muted-grey);
-  border-radius: 8px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;       
 }
 
 .product-card h3 {
-  color: var(--brand-color);
+  font-size: 2.0rem;         
+  color: rgb(71, 2, 2); 
+  font-family: 'Rochester', cursive;
   margin-top: 0;
 }
 
@@ -90,58 +98,40 @@ footer {
 }
 
 h1 {
-font-family: 'Rochester', cursive;
-color: rgb(255, 255, 255)
+  font-family: 'Rochester', cursive;
+  color: rgb(255, 255, 255);
 }
 
 p {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 
 .tagline {
-  font-family:"Rochester", cursive;
+  font-family: "Rochester", cursive;
   color: #ffffff;
   font-size: 20px;
-
   display: flex;
   justify-content: center; 
   align-items: center;     
-  min-height: 200px;        
+  min-height: 200px;         
   text-align: center;
 }
 
-/* Styling para sa mismong Product Card */
-.product-card {
-  background-color: #faf9f9; 
-  border-radius: 20px;       
-  padding: 16px;            
-  border-left: 5px solid var(--brand-color); /* Coloured left border gamit ang brand variable */
-  margin-bottom: 20px;       
-}
-
-/* 5. Styling para sa Product Name (h3 sa loob ng card) */
-.product-card h3 {
-  font-size: 2.0rem;         
-  color: rgb(71, 2, 2); 
-  font-family: 'Rochester', cursive;
-}
-
-
-/* 1. Fieldset styling */
+/* Fieldset styling */
 fieldset {
   padding: 1rem;
   border-radius: 15px;
   border: 1px solid #ccc;
 }
 
-/* 2. Legend styling */
+/* Legend styling */
 legend {
   color: var(--brand-color);
   font-weight: bold;
   padding: 5px;
 }
 
-/* 3. Inputs at Textarea padding */
+/* Inputs at Textarea padding */
 input, textarea {
   padding: 8px 12px;
   border-radius: 4px;
@@ -150,24 +140,23 @@ input, textarea {
   box-sizing: border-box;
 }
 
-/* 4. Submit Button styling */
+/* Submit Button styling */
 button[type="submit"], input[type="submit"] {
   background-color: var(--brand-color);
   color: white;
   padding: 10px 20px;
-  border: none;              
-  border-radius: px;
-  cursor: pointer;          
+  border: none;               
+  border-radius: 4px;
+  cursor: pointer;           
   font-weight: bold;
 }
 
-/* 5. Visible Focus State (Kopyahin lang ang ibinigay sa screenshot) */
+/* Visible Focus State */
 input:focus,
 textarea:focus {
   outline: 3px solid var(--brand-color);
   outline-offset: 2px;
 }
-
 
 .centered-nav {
   text-align: center;
@@ -179,56 +168,33 @@ textarea:focus {
   margin: 0 15px; 
 }
 
-.view-details-link
-{
-font-family: 'Rochester', cursive;
-text-decoration: none;
-font-size: 20px;
-color: var(--brand-color);
+.view-details-link {
+  font-family: 'Rochester', cursive;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--brand-color);
 }
 
-.owner-name
-{
-font-family: 'Rochester', cursive;
-font-size: 30px;
-color: rgb(255, 255, 255);
+.owner-name {
+  font-family: 'Rochester', cursive;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
 }
 
-.our-story
-{
-font-family: 'Rochester', cursive;
-font-size: 30px;
-color: rgb(255, 255, 255);
+.our-story {
+  font-family: 'Rochester', cursive;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
 }
 
-.contacts
-{
-font-family: 'Rochester', cursive;
-font-size: 25px;
-color: rgb(255, 255, 255);
+.contacts {
+  font-family: 'Rochester', cursive;
+  font-size: 25px;
+  color: rgb(255, 255, 255);
 }
 
-.your-details-title
-{
-font-family: 'Rochester', cursive;
-font-size: 20px;
-color: rgb(83, 0, 0);
+.your-details-title {
+  font-family: 'Rochester', cursive;
+  font-size: 20px;
+  color: rgb(83, 0, 0);
 }
-
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-}
-
-.product-card {
-  flex: 1 1 240px;
-  background-color: #faf9f9; 
-  border-radius: 20px;       
-  padding: 16px;            
-  border-left: 5px solid var(--brand-color);
-}
-
-
-
-
