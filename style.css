@@ -216,7 +216,19 @@ color: rgb(83, 0, 0);
 }
 
 
+product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
 
+.product-card {
+  flex: 1 1 240px;
+  background-color: #faf9f9; 
+  border-radius: 20px;       
+  padding: 16px;            
+  border-left: 5px solid var(--brand-color);
+}
 
 
 
