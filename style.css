@@ -27,25 +27,27 @@ body {
 /* ==========================================================================
    3. LAYOUT REGIONS
    ========================================================================== */
-header {
+.site-header {
   background-color: #07081f;
   border-bottom: 1px solid var(--muted-grey);
   padding: 1rem;
+
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
+.site-header nav ul {
+  display: flex;
+  gap: 20px; 
+  list-style: none; 
   margin: 0;
-}
-
-nav li {
-  display: inline-block;
-  margin-right: 1rem;
+  padding: 0;
 }
 
 nav a {
-  color: rgb(238, 231, 231);
+  color: rgb(255, 59, 59);
   text-decoration: none;
   font-family: 'Rochester', cursive;
 }
@@ -98,8 +100,14 @@ p {
 
 .tagline {
   font-family:"Rochester", cursive;
-  color: #ffd000;
-  font-size: 17px;
+  color: #ffffff;
+  font-size: 20px;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 200px;        
+  text-align: center;
 }
 
 /* Styling para sa mismong Product Card */
@@ -206,3 +214,10 @@ font-family: 'Rochester', cursive;
 font-size: 20px;
 color: rgb(83, 0, 0);
 }
+
+
+
+
+
+
+
