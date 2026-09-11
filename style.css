@@ -215,7 +215,7 @@ font-size: 20px;
 color: rgb(83, 0, 0);
 }
 
-product-grid {
+.product-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
