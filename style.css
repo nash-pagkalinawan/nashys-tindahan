@@ -204,3 +204,9 @@ textarea:focus {
   font-size: 20px;
   color: rgb(83, 0, 0);
 }
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
