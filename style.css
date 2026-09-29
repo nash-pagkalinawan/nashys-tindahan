@@ -72,8 +72,8 @@ footer {
    4. COMPONENTS & PRODUCT GRID
    ========================================================================== */
 .product-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
 }
 
@@ -216,15 +216,25 @@ textarea:focus {
 
 .page {
 display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side     main"
-    "foot     foot";
-  gap: 16px;
+    "masthead"
+    "main"
+    "side"
+    "foot";
 }
 
-.aside {
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side     main"
+      "foot     foot";
+  }
+}
+
+aside {
 grid-area: side;
 }
 
