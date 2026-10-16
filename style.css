@@ -48,7 +48,7 @@ body {
 nav a {
   color: rgb(255, 59, 59);
   text-decoration: none;
-  font-family: 'Rochester', cursive;
+  font-family: 'consolas', cursive;
 }
 
 main {
@@ -236,6 +236,9 @@ display: grid;
 
 aside {
 grid-area: side;
-color:aliceblue
+color:aliceblue;
+background-color: rgb(32, 54, 70);
 }
+
+
 
